@@ -49,36 +49,65 @@
                     android:textColor="@color/black"
                     android:fontFamily="@font/nunito_semibold"/>
 
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:paddingBottom="7dp">-->
+
+<!--                    <SearchView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:id="@+id/cand_usage_search"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:layout_marginStart="27dp"-->
+<!--                        android:layout_marginEnd="27dp"-->
+<!--                        android:background="@drawable/searchview_bg"-->
+<!--                        android:layoutDirection="rtl"-->
+<!--                        android:searchIcon="@null"-->
+<!--                        android:queryHint="Search for job or Candidate"-->
+<!--                        android:queryBackground="@drawable/searchview_bg"-->
+<!--                        android:theme="@style/AppSearchView">-->
+
+<!--                    </SearchView>-->
+
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:layout_marginStart="334dp"-->
+<!--                        android:src="@drawable/search"/>-->
+
+<!--                </RelativeLayout>-->
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:paddingBottom="7dp">
-
                     <SearchView
-                        android:layout_width="match_parent"
                         android:id="@+id/cand_usage_search"
+                        android:layout_width="346dp"
                         android:layout_height="50dp"
+                        android:layout_marginLeft="27dp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginStart="27dp"
-                        android:layout_marginEnd="27dp"
                         android:background="@drawable/searchview_bg"
                         android:layoutDirection="rtl"
-                        android:searchIcon="@null"
-                        android:queryHint="Search for job or Candidate"
                         android:queryBackground="@drawable/searchview_bg"
+                        android:queryHint="Search for job or Candidate"
                         android:theme="@style/AppSearchView">
 
                     </SearchView>
-
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:layout_marginLeft="322dp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginStart="334dp"
-                        android:src="@drawable/search"/>
+                        android:theme="@style/AppSearchView"
+                        android:src="@drawable/search" />
 
                 </RelativeLayout>
+
 
                 <TextView
                     android:id="@+id/textView256"
@@ -211,6 +240,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="32dp"
                     android:layout_marginBottom="19dp"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginEnd="26dp"
                     android:nestedScrollingEnabled="false" />
 
                 <androidx.cardview.widget.CardView

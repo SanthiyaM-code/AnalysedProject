@@ -52,9 +52,9 @@ public class DashboardFragment extends Fragment {
     int[] dp = {R.drawable.dp_1,R.drawable.small_dp_1,R.drawable.ellipse_1,R.drawable.ellipse_234};
     int [] bg = {R.color.yellow,R.color.red,R.color.light_green, R.color.red,R.color.light_green,R.color.yellow};
 
-    public DashboardFragment() {
-        // Required empty public constructor
-    }
+//    public DashboardFragment() {
+//        // Required empty public constructor
+//    }
 
     /**
      * Use this factory method to create a new instance of
@@ -87,7 +87,7 @@ public class DashboardFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
+        View view=  inflater.inflate(R.layout.fragment_dashboard, container, false);
 
         Dash1RecyclerView=view.findViewById(R.id.dash_rec1);
         Dash1RecyclerView.setLayoutManager(new GridLayoutManager(getContext(),2));
