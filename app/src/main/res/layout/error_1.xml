@@ -6,17 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView42"
-        android:layout_width="296dp"
-        android:layout_height="128dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="113dp"
-        app:srcCompat="@drawable/layer_x_2" />
-
     <TextView
         android:id="@+id/textView323"
         android:layout_width="wrap_content"
@@ -102,4 +91,15 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="17dp" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="296dp"
+        android:layout_height="128dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="113dp"
+        app:srcCompat="@drawable/layer_x_2" />
 </RelativeLayout>
