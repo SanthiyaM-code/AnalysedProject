@@ -41,227 +41,205 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/dot_on_1"
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:layout_marginTop="32dp"
-                    android:foreground="@color/luc_white"
-                    app:cardCornerRadius="250dp"
-                    android:visibility="invisible"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/dot_on_2"
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_toEndOf="@id/dot_on_1"
-                    android:foreground="@color/luc_white"
-                    app:cardCornerRadius="250dp"
-                    android:visibility="invisible"/>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/dot_on_3"
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_toEndOf="@id/dot_on_2"
-                    android:foreground="@color/luc_white"
-                    android:visibility="invisible"/>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    android:id="@+id/card_pro_1"
-                    android:layout_marginStart="14dp"
-                    android:layout_toEndOf="@id/dot_on_3"
-                    app:cardElevation="0dp"
-                    app:cardBackgroundColor="@android:color/transparent"
-                    app:cardCornerRadius="250dp"
-                    android:layout_marginBottom="34dp">
-
-                    <ImageView
-                        android:id="@+id/imageView_2"
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_pro_1"
                         android:layout_width="65dp"
                         android:layout_height="65dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/circle_new" />
+                        android:layout_marginStart="25dp"
 
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="26dp"
-                        android:layout_height="26dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/iconfinder_general_office_34_3592855" />
-                </androidx.cardview.widget.CardView>
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="250dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:id="@+id/card_dot_4"
-                    android:layout_marginStart="14dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_toEndOf="@id/card_pro_1"
-                    android:foreground="@color/luc_white"
-                    app:cardCornerRadius="250dp"/>
+                        <ImageView
+                            android:id="@+id/imageView_2"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/circle_new" />
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:id="@+id/card_dot_5"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_toEndOf="@id/card_dot_4"
-                    app:cardCornerRadius="250dp"
-                    android:foreground="@color/luc_white" />
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/iconfinder_general_office_34_3592855" />
+                    </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:id="@+id/card_dot_6"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_toEndOf="@id/card_dot_5"
-                    app:cardCornerRadius="250dp"
-                    android:foreground="@color/luc_white" />
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:id="@+id/card_dot_7"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_toEndOf="@id/card_dot_6"
-                    app:cardCornerRadius="250dp"
-                    android:foreground="@color/luc_white" />
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    android:id="@+id/card_pro_2"
-                    android:layout_marginStart="14dp"
-                    android:layout_toEndOf="@id/card_dot_7"
-                    app:cardCornerRadius="250dp"
-                    app:cardElevation="0dp"
-                    app:cardBackgroundColor="@android:color/transparent"
-                    android:layout_marginBottom="34dp">
-
-                    <ImageView
-                        android:id="@+id/imageView2_forAC"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:src="@drawable/circle_unselected" />
-
-                    <ImageView
-                        android:id="@+id/imageView_3"
-                        android:layout_width="26dp"
-                        android:layout_height="26dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/iconfinder_general_office_34_3592855" />
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:id="@+id/card_dot_8"
-                    android:layout_marginStart="14dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_toEndOf="@id/card_pro_2"
-                    app:cardCornerRadius="250dp"
-                    android:foreground="@color/luc_white" />
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:id="@+id/card_dot_9"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_toEndOf="@id/card_dot_8"
-                    app:cardCornerRadius="250dp"
-                    android:foreground="@color/luc_white" />
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:id="@+id/card_dot_10"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_toEndOf="@id/card_dot_9"
-                    app:cardCornerRadius="250dp"
-                    android:foreground="@color/luc_white" />
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:id="@+id/card_dot_11"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_toEndOf="@id/card_dot_10"
-                    app:cardCornerRadius="250dp"
-                    android:foreground="@color/luc_white" />
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    android:id="@+id/card_pro_3"
-                    android:layout_marginStart="14dp"
-                    android:layout_toEndOf="@id/card_dot_11"
-                    app:cardElevation="0dp"
-                    app:cardBackgroundColor="@android:color/transparent"
-                    app:cardCornerRadius="250dp">
-
-                    <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="65dp"
-                        android:layout_height="65dp"
-                        android:src="@drawable/circle_unselected" />
-
-                    <ImageView
-                        android:id="@+id/imageView4"
+                    <LinearLayout
+                        android:id="@+id/linearLayout11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:src="@drawable/iconfinder_general_office_34_3592855" />
-                </androidx.cardview.widget.CardView>
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/card_pro_2"
+                        app:layout_constraintStart_toEndOf="@+id/card_pro_1"
+                        app:layout_constraintTop_toTopOf="parent">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:id="@+id/card_dot_12"
-                    android:layout_marginStart="14dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_toEndOf="@id/card_pro_3"
-                    app:cardCornerRadius="250dp"
-                    android:foreground="@color/luc_white"
-                    android:visibility="invisible"/>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_dot_4"
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_toEndOf="@id/card_pro_1"
+                            android:foreground="@color/luc_white"
+                            app:cardCornerRadius="250dp"
+                            tools:layout_editor_absoluteX="253dp"
+                            tools:layout_editor_absoluteY="29dp" />
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:id="@+id/card_dot_13"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_toEndOf="@id/card_dot_12"
-                    app:cardCornerRadius="250dp"
-                    android:visibility="invisible"
-                    android:foreground="@color/luc_white"
-                    />
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_dot_5"
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_toEndOf="@id/card_dot_4"
+                            android:foreground="@color/luc_white"
+                            app:cardCornerRadius="250dp"
+                            tools:layout_editor_absoluteX="117dp"
+                            tools:layout_editor_absoluteY="29dp" />
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:id="@+id/card_dot_14"
-                    android:layout_marginStart="6dp"
-                    android:layout_marginTop="32dp"
-                    android:layout_toEndOf="@id/card_dot_13"
-                    app:cardCornerRadius="250dp"
-                    android:visibility="invisible"
-                    android:foreground="@color/luc_white"
-                    />
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_dot_6"
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_toEndOf="@id/card_dot_5"
+                            android:foreground="@color/luc_white"
+                            app:cardCornerRadius="250dp"
+                            tools:layout_editor_absoluteX="104dp"
+                            tools:layout_editor_absoluteY="29dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_dot_7"
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_toEndOf="@id/card_dot_6"
+                            android:foreground="@color/luc_white"
+                            app:cardCornerRadius="250dp"
+                            tools:layout_editor_absoluteX="135dp"
+                            tools:layout_editor_absoluteY="29dp" />
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_pro_2"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="250dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toStartOf="@+id/card_pro_3"
+                        app:layout_constraintStart_toEndOf="@+id/card_pro_1"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView2_forAC"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/circle_unselected" />
+
+                        <ImageView
+                            android:id="@+id/imageView_3"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/iconfinder_general_office_34_3592855" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/card_pro_3"
+                        app:layout_constraintStart_toEndOf="@+id/card_pro_2"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_dot_8"
+                            android:layout_width="6dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_height="6dp"
+                            android:layout_toEndOf="@id/card_pro_2"
+                            android:foreground="@color/luc_white"
+                            app:cardCornerRadius="250dp"
+                            tools:layout_editor_absoluteX="301dp"
+                            tools:layout_editor_absoluteY="29dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_dot_9"
+                            android:layout_width="6dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_height="6dp"
+                            android:layout_toEndOf="@id/card_dot_8"
+                            android:foreground="@color/luc_white"
+                            app:cardCornerRadius="250dp"
+                            tools:layout_editor_absoluteX="285dp"
+                            tools:layout_editor_absoluteY="29dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_dot_10"
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_toEndOf="@id/card_dot_9"
+                            android:foreground="@color/luc_white"
+                            app:cardCornerRadius="250dp"
+                            tools:layout_editor_absoluteX="269dp"
+                            tools:layout_editor_absoluteY="29dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_dot_11"
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_toEndOf="@id/card_dot_10"
+                            android:foreground="@color/luc_white"
+                            app:cardCornerRadius="250dp"
+                            tools:layout_editor_absoluteX="153dp"
+                            tools:layout_editor_absoluteY="29dp" />
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_pro_3"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginEnd="25dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="250dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/circle_unselected" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/iconfinder_general_office_34_3592855" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
             </RelativeLayout>
         </LinearLayout>
 

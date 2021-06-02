@@ -87,10 +87,11 @@
                     android:paddingBottom="7dp">
                     <SearchView
                         android:id="@+id/cand_usage_search"
-                        android:layout_width="346dp"
+                        android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginLeft="27dp"
                         android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
                         android:background="@drawable/searchview_bg"
                         android:layoutDirection="rtl"
                         android:queryBackground="@drawable/searchview_bg"
@@ -101,7 +102,8 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="322dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_alignParentEnd="true"
                         android:layout_marginTop="5dp"
                         android:theme="@style/AppSearchView"
                         android:src="@drawable/search" />
@@ -124,93 +126,121 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="27dp"
-                    android:layout_marginStart="27dp"
                     android:layout_marginBottom="2dp">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                    <ImageButton
-                        android:id="@+id/scheduleButton"
-                        android:layout_width="62dp"
-                        android:layout_height="62dp"
-                        app:srcCompat="@drawable/dash_schedule"
-                        android:background="@drawable/background_solid_white"/>
 
-                    <TextView
-                        android:id="@+id/textView260"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/scheduleButton"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginTop="9dp"
-                        android:text="Schedule"
-                        android:textAlignment="center"
-                        android:textSize="16dp"
-                        android:fontFamily="@font/nunito"/>
+                        <LinearLayout
+                            android:id="@+id/linearLayout7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="25dp"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
 
-                    <ImageButton
-                        android:id="@+id/mailButton"
-                        android:layout_width="62dp"
-                        android:layout_height="62dp"
-                        android:layout_marginStart="34dp"
-                        android:layout_toEndOf="@+id/scheduleButton"
-                        android:background="@drawable/background_solid"
-                        app:srcCompat="@drawable/dash_mail" />
+                            <ImageButton
+                                android:id="@+id/scheduleButton"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:background="@drawable/background_solid_white"
+                                app:srcCompat="@drawable/dash_schedule" />
 
-                    <TextView
-                        android:id="@+id/textView257"
-                        android:layout_width="62dp"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/mailButton"
-                        android:layout_marginStart="34dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_toEndOf="@+id/textView260"
-                        android:text="Mail"
-                        android:textAlignment="center"
-                        android:textSize="16dp"
-                        android:fontFamily="@font/nunito"/>
+                            <TextView
+                                android:id="@+id/textView260"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito"
+                                android:text="Schedule"
+                                android:textAlignment="center"
+                                android:textSize="16dp" />
+                        </LinearLayout>
 
-                    <ImageButton
-                        android:id="@+id/filesButton"
-                        android:layout_width="62dp"
-                        android:layout_height="62dp"
-                        android:layout_marginStart="34dp"
-                        android:layout_toEndOf="@+id/mailButton"
-                        android:background="@drawable/background_solid"
-                        app:srcCompat="@drawable/dash_note" />
+                        <LinearLayout
+                            android:id="@+id/linearLayout6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toStartOf="@+id/linearLayout9"
+                            app:layout_constraintStart_toEndOf="@+id/linearLayout7">
 
-                    <TextView
-                        android:id="@+id/textView258"
-                        android:layout_width="62dp"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/filesButton"
-                        android:layout_marginStart="34dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_toEndOf="@+id/textView257"
-                        android:text="Files"
-                        android:textAlignment="center"
-                        android:textSize="16dp"
-                        android:fontFamily="@font/nunito"/>
+                            <ImageButton
+                                android:id="@+id/mailButton"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:background="@drawable/background_solid"
+                                app:srcCompat="@drawable/dash_mail" />
 
-                    <ImageButton
-                        android:id="@+id/tasksButton"
-                        android:layout_width="62dp"
-                        android:layout_height="62dp"
-                        android:layout_marginStart="34dp"
-                        android:layout_toEndOf="@+id/filesButton"
-                        android:background="@drawable/background_solid"
-                        app:srcCompat="@drawable/dash_task" />
+                            <TextView
+                                android:id="@+id/textView257"
+                                android:layout_width="62dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito"
+                                android:text="Mail"
+                                android:textAlignment="center"
+                                android:textSize="16dp" />
+                        </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/textView259"
-                        android:layout_width="62dp"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/tasksButton"
-                        android:layout_marginStart="34dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_toEndOf="@+id/textView258"
-                        android:text="Tasks"
-                        android:textAlignment="center"
-                        android:textSize="16dp"
-                        android:fontFamily="@font/nunito"/>
+                        <LinearLayout
+                            android:id="@+id/linearLayout9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toStartOf="@+id/linearLayout8"
+                            app:layout_constraintStart_toEndOf="@+id/linearLayout6">
+
+                            <ImageButton
+                                android:id="@+id/filesButton"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:background="@drawable/background_solid"
+                                app:srcCompat="@drawable/dash_note" />
+
+                            <TextView
+                                android:id="@+id/textView258"
+                                android:layout_width="62dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito"
+                                android:layout_marginTop="10dp"
+                                android:text="Files"
+                                android:textAlignment="center"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout8"
+                            android:layout_width="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+
+                            <ImageButton
+                                android:id="@+id/tasksButton"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:background="@drawable/background_solid"
+                                app:srcCompat="@drawable/dash_task" />
+
+                            <TextView
+                                android:id="@+id/textView259"
+                                android:layout_width="62dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito"
+                                android:text="Tasks"
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="center"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
                 </RelativeLayout>
 
                 <TextView
@@ -379,7 +409,7 @@
                             android:layout_height="match_parent"
                             android:id="@+id/dash_rec3"
                             android:layout_marginTop="25dp"
-                            android:layout_marginStart="29dp"
+                            android:layout_marginStart="20dp"
                             android:layout_marginEnd="22dp"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>

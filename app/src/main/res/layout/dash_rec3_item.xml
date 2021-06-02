@@ -5,63 +5,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="250dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginBottom="23dp"
-        android:id="@+id/dash_interview_dp">
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView31"
-            android:layout_width="49dp"
-            android:layout_height="49dp"
-            tools:srcCompat="@tools:sample/avatars" />
-    </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/textView334"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_toEndOf="@+id/dash_interview_dp"
-        android:text="TextView"
-        android:textSize="16dp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/nunito_semibold"/>
+        android:orientation="horizontal">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView335"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView334"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="0dp"
-        android:layout_toEndOf="@+id/dash_interview_dp"
-        android:text="TextView"
-        android:textSize="14dp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/nunito"/>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dash_interview_dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="250dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/imageView32"
-        android:layout_width="33dp"
-        android:layout_height="33dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="44dp"
-        app:srcCompat="@drawable/expand_more" />
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="49dp"
+                    android:layout_height="49dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </androidx.cardview.widget.CardView>
 
-    <View
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/imageView32"
+                app:layout_constraintStart_toEndOf="@+id/dash_interview_dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView334"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="TextView"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView335"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView334"
+                        android:fontFamily="@font/nunito"
+                        android:text="TextView"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView334" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="36dp"
+                android:layout_height="33dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/expand_more" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+        <View
         android:id="@+id/cert_line"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_below="@+id/dash_interview_dp"
         android:layout_marginStart="26dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="22dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="5dp"
         android:background="@color/light_grey" />
+    </LinearLayout>
 </RelativeLayout>
